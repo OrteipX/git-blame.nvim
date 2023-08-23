@@ -27,8 +27,6 @@ function! GitBlameInit()
 		autocmd BufEnter     * lua require('gitblame').handle_buf_enter()
 		autocmd BufDelete    * lua require('gitblame').cleanup_file_data()
 	augroup END
-
-    call GitBlameToggle()
 endfunction
 
 function! GitBlameEnable()
